@@ -1,0 +1,380 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'region';
+    src: url('font/region.ttf') format('truetype');
+}
+.region{
+	left: 1200px;
+	top: 10px;
+	position: absolute;
+	font-size: 25px;
+	font-family :'region';
+	font-weight: bold;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'SUIT-Medium';
+}
+
+.plan-container{
+	width: 100%;
+	height: 90%;
+}
+
+/* make_plan sub-header */
+.plan-header{
+	width: 100%;
+	border-bottom: 1px solid #545454;
+	height: 60px;
+	position: relative;
+}
+
+.plan-header_button-sumbit{
+	width: 75px;
+	height: 35px;
+	position: absolute;
+	top: 15px;
+	right: 140px;
+	cursor: pointer;
+	background-color: #BDDFF7;
+	color: #383838;
+	border: none;
+	border-radius: 3px;
+	font-size: 20px;
+	font-family: 'SUIT-Bold';
+}
+
+.plan-header_button-close{
+	width: 75px;
+	height: 35px;
+	position: absolute;
+	top: 15px;
+	right: 40px;
+	cursor: pointer;
+	background: #BDDFF7;
+	color: #383838;
+	border: none;
+	border-radius: 3px;
+	font-size: 20px;
+	font-family: 'SUIT-Bold';
+}
+
+/* 날자 받아오기 */
+#days{
+	width: 30px;
+	height: 30px;
+	left: 930px;
+	position: absolute;
+	top: 13px;
+}
+ 
+.calendar{
+	right:1100px;
+	top: 0px
+}
+.calendar_detail_01{
+	position:absolute;
+	left:400px;
+	top:20px;
+	font-family: 'SUIT-Bold';
+}
+.calendar_detail_02{
+	position:absolute;
+	left:682px;
+	top:20px;
+	font-family: 'SUIT-Bold';
+}
+#sdate{
+	position:absolute;
+	width: 100px;
+    height: 35px;
+    left:500px;
+    top:10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom : 1px solid black;
+    text-align: center;
+    }
+#edate{
+	position:absolute;
+	width: 100px;
+    height: 35px;
+    left:786px;
+    top:10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom : 1px solid black;
+    text-align: center;
+    }
+    
+td button{
+	background-color: #B7E1F5;
+    border: none;
+    cursor: pointer;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 0px;
+    color: #0c3b54;
+    font-family: 'SUIT-Bold';
+}
+
+td button:hover{
+	background-color: #b7d6f5;
+}
+    
+#myTable{
+	margin: 0;
+	width: 100%;
+}
+    
+#title_input{
+	position:absolute;
+	width: 250px;
+    height: 34px;
+    left:110px;
+    top:10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom : 1px solid black;
+    font-family: 'SUIT-Medium';
+    padding-left: 14px;
+}
+.title{
+	position:absolute;
+	width: 70px;
+    height: 50px;
+    top:20px;
+    left:27px;
+    font-family: 'SUIT-Bold';
+}
+.wave{
+	position:absolute;
+	width: 50px;
+    height: 50px;
+    left:635px;
+    top:5px;
+}
+
+/* make_plan sub-header */
+
+/* DAYS box */
+.plan-daysbox{
+	width: 120px;
+	height: 90%;
+	position: absolute;
+	left: 0px;
+	background: #b7e1f5;
+}
+
+.plan-daysboxtitle{
+	height: 80px;
+	border-bottom: 1px solid #22b8ff;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	line-height: 80px;
+	font-weight: bold;
+}
+
+/* DAYS box */
+
+/* 해당 날짜에 일청을 추가하는 영역 */
+.plan-planscontainer{
+	width: 260px;
+	height: 90%;
+	position: absolute;
+	left: 120px;
+}
+
+.plan-plansbox{
+	float: left;
+	border-right: 1px solid #545454;
+	border-bottom: 1px solid #545454;
+	width: 100%;
+	height: 100%;
+}
+
+.plan-plansboxtitle{
+	background-color: #81b0c9;
+	height: 78px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 80px;
+	border: 1px solid powderblue;
+}
+/* 해당 날짜에 일청을 추가하는 영역 */
+
+/* 장소검색 */
+#plan-searchbox{
+	border-right: 1px solid #545454;
+	border-bottom: 1px solid #545454;
+	width: 367px;
+	height: 90%;
+	position: absolute;
+	left: 380px;
+	overflow: scroll; 
+}
+
+.plan-search{
+	border: 1px solid #545454;
+	width: 100%;
+	height: 78px;
+}
+
+.plan-search button{
+	width: 45px;
+	height: 31px;
+	border: 1px solid #545454;
+	border-radius: 3px;
+	background-color: white;
+	font-weight: bold;
+	cursor: pointer;
+	font-family: 'SUIT-Medium';
+}
+
+form{
+	display: block;
+	margin-top: 0;
+}
+
+.search_input{
+	width: 230px;
+	height: 25px;
+	margin: 20px 10px 0 25px;
+	font-family: 'SUIT-Medium';
+}
+
+.plan-searchbox_ul{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+.plan-searchbox_ul li{
+	list-style: none;
+	width: 100%;
+	border-bottom: 1px solid #545454;
+	position: relative;
+	height: 90px;
+	margin: 0;
+}
+
+.tourListImg{
+	float: left;
+	position: absolute;
+	left: 13px;
+    top: 2px;
+    border-radius: 2px;
+}
+
+.info{
+	float: right;
+	width: 220px;
+	height: 100%;
+	position: absolute;
+	left: 122px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.item-name{
+	position: absolute;
+	top: -8px;
+	left: 10px;
+	font-size: 16px;
+	width: 210px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-family: 'SUIT-Bold';
+}
+
+.item-addr{
+	position: absolute;
+	left: 10px;
+	bottom: 15px;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-family: 'SUIT-Medium';
+}
+
+.placeList-div{
+	position: absolute;
+	right: 13px;
+	top: 7px;
+}
+
+.placeList-div_button{
+	width: 23px;
+	height: 23px;
+	border: 2px solid skyblue;
+	border-radius: 4px;
+	background-color: white;
+	color: skyblue;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0;
+}
+/* 장소검색 */
+
+
+/* 지도API */
+.plan-mapbox{
+	height: 90%;
+	width: 50%;
+	position: absolute;
+	left: 751px;
+}
+
+/* 일정 추가 리스트 */
+.list-element> #list li {
+	font-family: 'SUIT-Medium';
+	font-size: 20px;
+	list-style: none;
+	border: 1px solid black;
+	width: 259px;
+/* 	height: 89px; */
+	text-align: center;
+/* 	line-height: 50px; */
+	padding-top: 19px;
+	padding-bottom: 18px;
+}
+
+#list{
+	margin: 0;
+	padding: 0;	
+}
+
+.del_btn {
+	border-color: black;
+	border-radius: 7px;
+	background-color: skyblue;
+}
+
+/* 일정 추가 리스트 */

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+}
+
+.select_zone{
+	margin: 16px 0 24px 0;
+	padding: 0;
+	text-align: center;
+}
+
+#select_bar{
+	width: auto;
+	margin: 0;
+	padding: 0;
+	height: 36px;
+	display: inline-flex;
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
+}
+
+
+/* area_List */
+
+.container{
+	margin-top: 60px;
+}
+
+.area{
+	display: block;
+	box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.15);
+	margin-bottom: 30px;
+}
+
+.area:hover{
+	text-decoration: none;
+}
+
+.area area-img{
+	display: block;
+}
+
+.area .area-text{
+	padding: 10px;
+	text-align: center;
+}
+
+.area .area-text h3{
+	font-size: 18px;
+	color: #545454;
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: 'SUIT-Bold';
+}
+
+.area .area-text .subtitle-text{
+	font-size: 16px;
+	color: #545454;
+	font-family: 'SUIT-Bold';
+}
+
+
+
+
+
+
+
+
+
+

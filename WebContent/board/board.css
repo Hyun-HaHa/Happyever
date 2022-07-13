@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Heavy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.head {
+	margin-bottom: 15px;
+}
+
+h3 {
+	text-align: center;
+	padding: 10px;
+}
+
+.container_p h3{
+	font-size: 20px;
+}
+
+.tbl_th{
+	text-align: center;
+	vertical-align: middle;
+	width: 140px;
+	background-color: powderblue;
+}
+
+.head > h3 {
+	padding:30px 0;
+	font-weight: bold;
+	border: 1px solid skyblue;
+	background-color: rgba(0,0,0,0);
+	color: skyblue;
+}
+
+.tbl_btn {
+	margin-left: 20px;
+	margin-right: 40px;
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0);
+	color: green;
+	padding: 5px;
+}
+
+.table_cate{
+	margin: 30px auto;
+	width: 60%;
+	height: 300px;
+	border-collapse: collapse;
+	border-radius: 2px;
+	border-style: hidden;
+	box-shadow: 0 0 0 1px #000;
+}
+
+.search_content{
+	float: left;
+	vertical-align: middle;
+	height: 78px;
+	line-height: 35px;
+	font-size: 18px;
+	font-family: 'SUIT-Medium';
+}
+
+.search_container {
+	text-align: right;
+	vertical-align: middle;
+	
+}
+
+#search{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.search_text {
+	width: 300px;
+/* 	height: 40px; */
+	vertical-align: middle;
+	height: 36px;
+}
+
+.btn-primary {
+/* 	height: 40px; */
+}
+
+.search_container, .search_content{
+	padding: 20px 0;
+}
+
+.container_p {
+	width: 60%;
+	height: auto;
+	max-width: 1500px;
+	margin-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+/* 	min-width: 1375px; */
+}
+
+.button1{
+	display: block;
+	box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.15);
+	margin-bottom: 30px;
+	border-radius: 7px;
+}
+	
+.plan{
+	display: block;
+}
+
+.item{
+/* 	height: 300px; */
+}
+	
+.img_r, .img_h {	/* 1:1 크기 이미지만 사용하기 */
+	max-width: 100%;
+	height: auto;
+	border-radius: 7px;
+	object-fit: cover;
+	display: block;
+}
+	
+.button_text{
+	padding: 10px 0;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	
+}
+
+.item :hover{
+   color: tomato;
+   text-decoration: none;
+}
+
+.button_text h3 {
+	line-height: 18px;
+}
+
+.table_cate a{
+	margin-left: 15px;
+	margin-right: 50px;
+	font-family: 'SUIT-Medium';
+	color: green;
+	width: auto;
+	height: auto;
+}
+
+.row a{
+	margin-right: 5px;
+	font-family: 'SUIT-Heavy';
+	color: gray;
+	font-size: 10px;
+}
+
+.page {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.pagination {
+	width: 20%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+

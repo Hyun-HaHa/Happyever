@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Tourlist">
+	<insert id="addTourlist" parameterType="tourlistdto">
+		INSERT INTO TOURLIST VALUES(#{title}, #{addr1}, #{areacode}, #{sigungucode}, #{firstimage2}, #{readcount}, ping_seq.nextval)
+	</insert>
+</mapper>

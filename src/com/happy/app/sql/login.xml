@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Login">
+	<select id="login" parameterType="hashmap" resultType="logindto">
+		SELECT * FROM SIGNUP WHERE email = #{email} AND password = #{password}
+	</select>
+	
+		<!-- 비밀번호 찾기 - 회원정보 일치여부 확인 -->
+	<select id="checkEmail" parameterType="map" resultType="string" >
+		SELECT email FROM SIGNUP WHERE email = #{email} AND name = #{name}
+	</select>
+
+	<!-- 임시비밀번호 업데이트 -->
+	<update id="updatePw" parameterType="map">
+		UPDATE SIGNUP SET password = #{AuthenticationKey} WHERE email = #{email}
+	</update>
+	
+	<insert id="signup" parameterType="logindto">
+		INSERT INTO signup VALUES (#{email}, #{password}, #{name}, #{birth}, #{addr}, #{phone_num})
+	</insert>
+</mapper>
+
+

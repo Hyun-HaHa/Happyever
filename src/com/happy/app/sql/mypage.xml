@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MyPage">
+	<select id="my_info" parameterType="hashmap" resultType="logindto">
+		SELECT * FROM SIGNUP WHERE email = #{email} AND password = #{password}
+	</select >
+	
+	<select id="my_name" parameterType="hashmap" resultType="String">
+		SELECT name FROM SIGNUP WHERE email = #{email} AND password = #{password}
+	</select>
+	
+	<update id="update_info" parameterType="hashmap">
+		UPDATE SIGNUP SET PASSWORD = #{change_pw}, ADDR = #{change_addr}, PHONE_NUM = #{change_phone_num} WHERE EMAIL = #{email}
+	</update >
+	
+	<delete id="delete_info" parameterType="string">
+		DELETE FROM SIGNUP WHERE EMAIL = #{delete_email}
+	</delete>
+	
+</mapper>
+
+

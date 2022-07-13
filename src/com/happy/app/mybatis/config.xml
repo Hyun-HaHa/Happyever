@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.happy.app.dto.LoginDTO" alias="logindto"/>
+		<typeAlias type="com.happy.app.dto.BoardDTO" alias="boarddto"/>
+		<typeAlias type="com.happy.app.dto.PlanMakeDTO" alias="planmakedto"/>
+		<typeAlias type="com.happy.app.dto.TourlistDTO" alias="tourlistdto"/>
+	</typeAliases>
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver" />
+				<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+				<property name="username" value="happy" />
+				<property name="password" value="happy" />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<mappers>
+		<mapper resource="com/happy/app/sql/login.xml" />
+		<mapper resource="com/happy/app/sql/board.xml" />
+		<mapper resource="com/happy/app/sql/mypage.xml"/>
+		<mapper resource="com/happy/app/sql/planmake.xml" />
+		<mapper resource="com/happy/app/sql/tourlist.xml" />
+	</mappers>
+</configuration>
