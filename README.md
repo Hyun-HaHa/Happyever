@@ -26,5 +26,5 @@ MVC 패턴을 활용한 JSP 팀 프로젝트
 <br>
 
 ## 🔗 상세설명
-
+https://velog.io/@hyun_ha/Project-Happyever-%EA%B5%AD%EB%82%B4%EC%97%AC%ED%96%89-%ED%94%8C%EB%9E%98%EB%84%88#-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD
 
